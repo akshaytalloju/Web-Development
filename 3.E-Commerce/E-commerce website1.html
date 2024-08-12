@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shopping</title>
+        <link rel="icon" type="image" href="icon1.jpg">
+        <style>
+            *{
+                
+                padding: 1%;
+                margin: 0%;
+                background-color: bisque;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+            #header{
+                width: 100%;
+                height: 500px;
+                background-color: rgb(150, 214, 155);
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                background-image: url(https://t3.ftcdn.net/jpg/05/19/88/90/360_F_519889094_wqCcbKUJkuMRPzR0CyBNPuyxM2uiZODC.jpg);
+            }
+            #img-box{
+                width: 202px;
+                height: 192px;
+                background-color: rgb(41, 101, 212);
+            }
+            h1{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-style: italic;
+                color: rgb(140, 98, 179);
+                text-align: center;
+                background-image: url(https://t4.ftcdn.net/jpg/04/27/23/07/360_F_427230705_IeEz4qBU5x2XoBQeMilUiwkqRGC1sdv0.jpg);
+                font-size: xx-large;
+            }
+            h2{
+                text-align: center;
+            }
+            img{
+                width: 188px;
+                height: 150px;
+            }
+            div{
+                height: 100px;
+                width: 100%;
+                padding: 7px;
+                border-radius: 20px;
+                border: none; 
+                font-size: 16px;
+                
+            }
+            ul{
+                height: 100px;
+                padding: 25px;
+                margin: 2px;
+            }
+            .menu-bar{
+                background-color: rgb(223, 211, 53);
+                text-align: center;
+            }
+            .menu-bar ul{
+                display: flex;
+                list-style: none;
+                color: black;
+            }
+            .menu-bar ul li{
+                width: 146px;
+                margin: 15px;
+                padding: 28px;
+                
+
+            
+            }
+            .active,.menu-bar ul li :hover
+            {
+                background-color: rgb(83, 129, 81);
+                border-radius: 3px;
+
+            }
+            .sub-menu-1{
+                display: none;
+            }
+            .menu-bar ul li:hover .sub-menu-1{
+                display: block;
+                position: absolute;
+                background-color: grey;
+                margin-top: 15px;
+                margin-left: -15px;
+            }
+           
+
+        </style>
+    </head>
+    <body style="background-image: linear-gradient(rgb(170, 41, 182), rgb(255, 163, 117));">
+        <h1>Amflip.in</h1>
+        <div id="header">
+            <div id="img-box"><h2> Electronics</h2><img src="https://thumbs.dreamstime.com/b/many-used-modern-electronic-gadgets-use-white-floor-reuse-recycle-concept-top-view-164230611.jpg"><a href="#"><p style="text-align: center;">click</p></a></div>
+            <div id="img-box"><h2> Clothing</h2><img src="https://www.jdinstitute.edu.in/media/2021/07/Thumbnail-.jpg"><br><a href=""><p style="text-align: center;">click</p></a></div>
+            <div id="img-box"><h2> Footware</h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tSJ-xEloXRgMsEFoyr-TRCF--v8RAIFGfN_PlbI3-Q&usqp=CAU&ec=48665701"><br><a href=""><p style="text-align: center;">click</p></a></div>
+            <div id="img-box"><h2> Furniture</h2><img src="https://w7.pngwing.com/pngs/625/18/png-transparent-brown-wooden-bedroom-furniture-set-art-bedside-tables-metal-furniture-couch-furniture-angle-furniture-drawer-thumbnail.png"><br><a href=""><p style="text-align: center;">Click</p></a></div>
+        </div>
+
+        <div class="menu-bar">
+            <ul>
+                <li class="active"><a href="#">Electronics</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li>Mobiles</li>
+                            <li>Laptops</li>
+                            <li>Headphones</li>
+                            <li>Home Theaters</li>
+                            <li>Decoration Lights</li>
+                        </ul>
+
+                    </div>
+                
+                </li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Footware</a></li>
+                <li><a href="#">Furniture</a></li>
+        
+        
+        </ul>
+        </div>
+    </body>
+</html>

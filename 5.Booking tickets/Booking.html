@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="icon" type="images" href="icon.jpg">
+    <style>
+
+        body {
+          font-family: Arial, sans-serif;
+          margin: 10;
+          padding: 10;
+        }
+        
+        h1, h2, h3 {
+          color: #333;
+          font-style: italic;
+        }
+        
+        header {
+          background-color: #f1f1f1;
+          padding: 10px;
+        }
+        
+        .hero-section {
+          background-image: url();
+          background-size: cover;
+          color: #dadada;
+          padding: 50px;
+          text-align: center;
+        }
+        
+        .featured-destinations {
+          padding: 30px;
+        }
+        
+        .destination-card {
+          border: 2px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          padding: 20px;
+        }
+        
+        footer {
+          background-color: #f1f1f1;
+          padding: 10px;
+          text-align: center;
+        }
+        input[type="text"] {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type="text"]:focus {
+          outline: none;
+          border-color: #007bff;
+        }
+        input[type="tel"]{
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type="number"]{
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: #0056b3;
+        }
+        header {
+          background-color: #f1f1f1;
+          padding: 20px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        } 
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+nav .submenu li {
+  display: block;
+}
+
+nav li:hover > .submenu {
+  display: block;
+}
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.destination-listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.destination-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.destination-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.destination-card h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.destination-card p {
+  margin-bottom: 10px;
+}
+
+.destination-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.destination-card a:hover {
+  background-color: #0056b3;
+}
+
+.payment-options {
+  padding: 20px;
+}
+
+.payment-options h2 {
+  margin: 0 0 20px;
+}
+
+.payment-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payment-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.payment-card p {
+  margin: 0;
+}
+</style>
+</head>
+<body>
+    <header>
+
+        <h1>Travel Booking Website</h1>
+        <input type="text" placeholder="Search for destinations">
+        <div class="submit-container">
+            <input type="submit" value="Search">
+          </div>
+      </header>
+    
+      <marquee behavior="" direction="left" style="color: red; font-style: italic;">New summer special offers are running check out the details below now...!</marquee>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a>
+            <ul class="submenu">
+              <li><a href="#">Goa</a></li>
+              <li><a href="#">Delhi</a></li>
+              <li><a href="#">Karnataka</a></li>
+              <li><a href="#">Kerala</a></li>
+              <li><a href="#">Agra</a></li>
+              <li><a href="#">Bangaluru</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero-section">
+        <h2>Plan your dream vacation</h2>
+      </section>
+
+      <section class="destination-listing">
+        <div class="destination-card">
+          <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Holiday_Village_Goa/images/16x7/Taj%20Goa%2016X9.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="Destination 1">
+          <h2>Goa</h2>
+          <p>Popular destination to visit with you partner and young groups. **Package starts from Rs.899/- per head limited offer</p>
+          <a href="#">Learn More</a>
+        </div>
+    
+        <div class="destination-card">
+          <img src="https://www.delhitourism.gov.in/dttdc/images/About_Img.jpg" alt="Destination 2">
+          <h2>Delhi</h2>
+          <p>Explore many wonders and feel the visit. **Package starts from Rs.2500/- per head Offer ends soon</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://karnatakatourism.org/wp-content/uploads/2020/05/Vastuchitra_Pattadakal-02-1.jpg" alt="Destination 3">
+            <h2>Karnataka</h2>
+            <p>Tourism centres on the ancient sculptured temples, modern cities, the hill ranges, forests and beaches. **Package starts from Rs.1200/- with service</p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div class="destination-card">
+            <img src="https://i.ytimg.com/vi/yLE5bDX7M3Y/maxresdefault.jpg" alt="Destination 4">
+            <h2>Kerala</h2>
+            <p>Feel the nature and its sounds makes your mood calm and peace. **Package starts from Rs.2000/- per head</p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div class="destination-card">
+            <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=" alt="Destination 5">
+            <h2>Agra</h2>
+            <p>Agra is a major tourist destination because of its many Mughal-era buildings, most notably the Taj Mahal, Agra Fort. **Package starts from Rs.3000/- per head basic offer</p>
+            <a href="#">Learn More</a>
+          </div>
+          
+          <div class="destination-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Bangalore_.jpg/1024px-Bangalore_.jpg" alt="Destination 5">
+            <h2>Bangaluru</h2>
+            <p>Places like Lal Baug Summer Palace of Tipu Sultan, Cubbon Park, Ulsoor Lake, Vidana Soudha, and Bangalore Palace, are the most favorite of tourists. **Package starts from Rs.2000/- per head</p>
+            <a href="#">Learn More</a>
+          </div>
+      </section>
+    
+      <section class="featured-destinations">
+        <h3>Featured Destinations</h3>
+        <div class="destination-card">
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="destination-card">
+            <input type="tel" placeholder="Mobile Number" required>
+        </div>
+        <div class="destination-card">
+            <input type="text" placeholder="Gender" required>
+        </div>
+        <div class="destination-card">
+            <input type="number" placeholder="Passengers" required>
+        </div>
+
+      </section>
+      
+       
+      <section class="payment-options">
+        <h2>Payment Options</h2>
+        <div class="payment-card">
+            <input type="radio" class="payment-checkbox">
+            <span class="checkmark"></span>
+          <img src="https://kw.visamiddleeast.com/dam/VCOM/global/pay-with-visa/images/cards-icon-800x450.png" alt="Visa">
+          <p>Pay with Visa</p>
+       </div>
+    
+        <div class="payment-card">
+            <input type="radio" class="payment-checkbox">
+            <span class="checkmark"></span>
+          <img src="https://i.guim.co.uk/img/media/dcafdf353f53e0a1f1333a9ab5a495ea067f257a/0_200_6000_3600/master/6000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=7e1591437da92d8212190acb9244c870" alt="Mastercard">
+          <p>Pay with Mastercard</p>
+        </div>
+
+        <div class="payment-card">
+            <input type="radio" class="payment-checkbox">
+            <span class="checkmark"></span>
+            <img src="https://m.economictimes.com/thumb/msid-74960608,width-1200,height-900,resizemode-4,imgsize-49172/upi-twitter.jpg" alt="UPI">
+            <p>Pay with UPI</p>
+          </div>
+        </section>
+
+        <div class="submit-container">
+            <input type="submit" value="Submit">
+          </div>
+          
+      <footer>
+        <p>&copy; 2023 Travel Booking Website. All rights reserved.</p>
+      </footer>
+</body>
+</html>
